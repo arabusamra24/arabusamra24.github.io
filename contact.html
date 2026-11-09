@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Contact Me</title>
+
+
+<style>
+
+body {
+
+font-family: Arial, sans-serif;
+color: black;
+margin: 20px;
+}
+h1 {
+color: red;
+background-color: black;
+text-align: center;
+padding: 15px;
+border: 2px solid red;
+border-radius: 10px;
+box-shadow: 3px 3px 5px gray;
+}
+p {
+font-size: 16px;
+margin: 15px;
+}
+input[type="text"] {
+background-color: yellow;
+color: black;
+border: 1px solid red;
+padding: 8px;
+border-radius: 5px;
+}
+input:focus {
+border: 2px solid white;
+}
+button {
+background-color: red;
+color: white;
+padding: 10px 20px;
+border: 2px solid red;
+border-radius: 5px;
+cursor: pointer;
+}
+button:hover {
+background-color: black;
+color: red;
+}
+</style>
+
+</head>
+
+<body>
+<h1>Contact Me</h1>
+
+<div>
+<p>Full Name: <input type="text" id="name"></p>
+
+<p>Email Address: <input type="text" id="email"></p>
+
+<p>Country: <input type="text" id="country"></p>
+
+<p>Comments: <input type="text" id="comments"></p>
+
+<button type="button" onclick="check()">Submit</button>
+</div>
+
+<script>
+function check() {
+    if (name.value == "" || email.value == "" || country.value == "" || comments.value == "") {
+        alert("Please fill all fields");
+    }
+    else {
+        alert("Form submitted successfully");
+    }
+}
+</script>
+
+</body>
+</html>
